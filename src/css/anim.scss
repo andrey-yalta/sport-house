@@ -1,0 +1,33 @@
+.anim__slideInTop{
+  opacity: 0;
+  transform: translate(0px, -120%);
+  transition: all 0.8s ease 0s;
+}
+.anim__slideInDown{
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 0.8s ease 0s;
+}
+.anim__slideInLeft{
+  opacity: 0;
+  transform: translate(-150%, 0px);
+  transition: all 0.8s ease 0s;
+}
+.anim__slideInRight{
+  opacity: 0;
+  transform: translate(150%, 0px);
+  transition: all 0.8s ease 0s;
+}
+._anim__noHide{
+
+}
+
+._active{
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+.anim__slideInLeft._active,
+._active .anim__slideInLeft{
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
