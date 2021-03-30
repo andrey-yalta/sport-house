@@ -1,0 +1,31 @@
+.main{
+  min-height: 100vh;
+}
+.main__head{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  span{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #777575;
+  }
+}
+.main__logo{
+  margin-top: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  img{
+    width: 178px;
+    height: 311.87px;
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,32 @@
+.advantages{
+  min-height: 100vh;
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item{
+
+    border-top: 0.5px solid #9F9F9F;
+    border-bottom: 0.5px solid #9F9F9F;
+    width: 541px;
+    height: 296px;
+    display: flex;
+    img{
+      padding-top: 60px;
+      width: 210px;
+      height: 189px;
+    }
+  }
+  &__item-info{
+    padding-top: 60px;
+    h4{
+      margin-bottom: 20px;
+    }
+    p{
+      margin-bottom: 20px;
+    }
+  }
+}
+.sale h4{
+  color: #452994;
+}

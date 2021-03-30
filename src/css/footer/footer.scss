@@ -1,0 +1,27 @@
+.footer{
+  background: #777575;
+  display: flex;
+  justify-content: flex-start;
+
+  &__logo{
+    display: flex;
+    margin-right: 75%;
+    span{
+      font-family: Big Shoulders Display, serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 43px;
+      /* identical to box height */
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+  }
+  &__links{
+    margin-top: 25px;
+    img{
+      margin-right: 10px;
+    }
+
+  }
+}

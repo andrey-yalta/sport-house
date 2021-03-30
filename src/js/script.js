@@ -6,7 +6,7 @@ navBarLogo.addEventListener("click", ()=>{
 
 
 
-const slilderImgClasses =["three__back-1","three__back-2","three__back-3","three__back-4"]
+const slilderImgClasses =["photos_back-1","photos_back-2","photos_back-3","photos_back-4"]
 // функция для прокрутки слайдера
 function slider(imgId,clickImgClass){
     document.querySelector(imgId).addEventListener("click", ()=>{
@@ -18,10 +18,10 @@ function slider(imgId,clickImgClass){
 
     })
 }
-slider("#first-img","three__back-1"); //прописываем функцию слайдера каждой ссылке на картинку
-slider("#second-img","three__back-2");
-slider("#third-img","three__back-3");
-slider("#four-img","three__back-4");
+slider("#first-img","photos_back-1"); //прописываем функцию слайдера каждой ссылке на картинку
+slider("#second-img","photos_back-2");
+slider("#third-img","photos_back-3");
+slider("#four-img","photos_back-4");
 
 
 

@@ -1,0 +1,22 @@
+.coaches{
+  min-height: 100vh;
+  &__content{
+    display: flex;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+      margin-bottom: 20px;
+    }
+    h6{
+      margin-bottom: 20px;
+      color: #452994;
+    }
+    p{
+      padding-left: 5vw;
+    }
+  }
+}

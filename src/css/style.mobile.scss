@@ -23,10 +23,9 @@
   z-index: 100;
   border-top: 0;
 }
-.first___navbar{
+.navbar{
   display: none;
 }
-
 .container{
   margin: 10px 30px;
 }
@@ -47,15 +46,14 @@ p{
   line-height: 12px;
 }
 h6{
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 18px;
   line-height: 22px;
 }
-
 /*************************FIRST****************************/
-.first{
+.main{
   width: 100vw;
 
   h1{
@@ -72,22 +70,18 @@ h6{
     font-size: 24px;
     line-height: 29px;
   }
-  .first__head{
-    .first__logo{
-      // background: red;
-      width: 90%;
-    }
-
+  &__logo{
+    // background: red;
+    width: 90%;
   }
 }
-
 /*************************SECOND****************************/
-.second{
-  .second__advantages{
+.advantages{
+  &__content{
     align-items: center;
     justify-content: center;
   }
-  .second__advantages-item{
+  &__advantages-item{
     align-items: center;
     justify-content: center;
     img{
@@ -95,66 +89,66 @@ h6{
       height: 141.75px;
       margin-right: 20px;
     }
-
-    .second__advantages-info{
-      width: 140px;
-    }
+  }
+  &__advantages-info{
+    width: 140px;
   }
 }
 /*************************THREE****************************/
-.three{
-  .three__content{
+.photos{
+  &__content{
     flex-direction: column-reverse;
-    .three__back-1{
+    .photos_back-1{
       background-image: url("../img/three-1.png");
     }
-    .three__back-2{
+    .photos_back-2{
       background-image: url("../img/three-2.png");
     }
-    .three__back-3{
+    .photos_back-3{
       background-image: url("../img/three-3.png");
     }
-    .three__back-4{
+    .photos_back-4{
       background-image: url("../img/three-4.png");
     }
-    .three__content-img{
-      width: 319px;
-      height: 261px;
-      img{
+
+  }
+  &__content-img{
+    width: 319px;
+    height: 261px;
+    img{
 
       width: 319px;
       height: 261px;
     }
   }
-    .three__content-info{
-      ul li{
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-        padding: 20px 10px;
-      }
+  &__content-info{
+    ul li{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 20px 10px;
     }
   }
 }
 /*************************FOUR****************************/
-.four{
-  .four__coachs{
+.coaches{
+  &__content{
     flex-direction: column;
-    .four__coachs-item{
-      img{
-        width: 264px;
-        height: 329px;
-      }
-      p{
-        width: 264px;
-        margin-bottom: 20px;
-      }
+  }
+  &__item{
+    img{
+      width: 264px;
+      height: 329px;
+    }
+    p{
+      width: 264px;
+      margin-bottom: 20px;
     }
   }
 }
 /*************************FIVE****************************/
-.five{
-  .five__content-item{
+.club-life{
+  &__content-item{
     flex-direction: column;
     margin: 10px;
     margin-bottom: 50px;
@@ -165,10 +159,10 @@ h6{
       margin-top: 10px;
     }
 
-    .five__content-info{
+    &__content-info{
       width: 100%;
     }
-    .five__content-img{
+    &__content-img{
       width: 100%;
     }
     &:first-child{
@@ -178,48 +172,46 @@ h6{
       // flex-direction: column-reverse;
     }
   }
-    .five__content-item:nth-child(3) {
+    &__content-item:nth-child(3) {
       flex-direction: column-reverse;
     }
 }
 /*************************SIX****************************/
-.six{
-  .six__content{
+.contacts{
+  &__content{
     flex-direction: column-reverse;
-    .six__map{
-      width: 100%;
+  }
+  &__map{
+    width: 100%;
+  }
+  &__content-info{
+    margin: 20px 10px;
+    p{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
     }
-    .six__info{
-      .six__info-item{
-        margin: 20px 10px;
-        p{
-          font-style: normal;
-          font-weight: normal;
-          font-size: 14px;
-          line-height: 17px;
-        }
 
-      }
-    }
   }
 }
 /*************************FOOTER****************************/
-footer{
-    padding: 20px 30px;
-.footer-logo{
-  margin-right: 40%;
-  img{
-    width: 25.34px;
-    height: 46.66px;
+.footer{
+  padding: 20px 30px;
+  &__logo{
+    margin-right: 40%;
+    img{
+      width: 25.34px;
+      height: 46.66px;
+    }
+    span{
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
   }
-  span{
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    letter-spacing: 0.05em;
-  }
-}
 }
 }
 
@@ -228,8 +220,9 @@ footer{
 /*************ADAPTIVE FOR IPAD************************/
 @media (max-width: 960px) and(min-width: 721px){
 h1{
+  //background: red;
   font-weight: 800;
-  font-size: 156px;
+  font-size: 120px !important;
   line-height: 147px;
   letter-spacing: 0.05em;
 }
@@ -256,7 +249,7 @@ p{
   margin: 30px 40px;
 }
 /*************************FIRST****************************/
-.first{
+.main{
   img{
     width: 147px;
     height: 257.55px;
@@ -270,24 +263,26 @@ p{
   }
 }
 /*************************SECOND****************************/
-.second{
-  .second__advantages{
+.advantages{
+  &__content{
     justify-content: center;
   }
-  .second__advantages-item{
+  &__item{
     width: 375.45px;
   }
 }
 /*************************THREE****************************/
-.three{
-.three__content{
-  .three__content-img{
+.photos{
+  .photos__content{
+
+  }
+  &__content-img{
     img{
       width: 100%;
       // height: 286px;
     }
   }
-  .three__content-info{
+  &__content-info{
     ul li{
       font-style: normal;
       font-weight: 500;
@@ -295,31 +290,26 @@ p{
       line-height: 22px;
       padding: 30px 10px;
     }}
-}
 
 }
 /*************************SIX****************************/
-.six{
-  .six__content{
-    .six__info{
-      .six__info-item{
-        p{
-          font-style: normal;
-          font-weight: normal;
-          font-size: 14px;
-          line-height: 17px;
-        }
-      }
+.contacts{
+  &__content-info{
+    p{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
     }
-    .six__map{
-      margin-top: 40px;
-    }
+  }
+  &__map{
+    margin-top: 40px;
   }
 }
 /*************************FOOTER****************************/
-footer{
+.footer{
   padding: 20px 50px;
-  .footer-logo{
+  .footer__logo{
     margin-right: 50%;
     span{
       font-weight: 800;
@@ -335,7 +325,6 @@ footer{
     }
   }
 }
-
 }
 
 /*************ADAPTIVE FOR LAPTOP************************/
@@ -362,7 +351,7 @@ h4{
   line-height: 22px;
 }
 p{
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -373,7 +362,7 @@ p{
   margin: 30px 80px;
 }
 /*************************FIRST****************************/
-.first{
+.main{
   img{
     width: 147px;
     height: 257.55px;
@@ -387,57 +376,33 @@ p{
   }
 }
 /*************************SECOND****************************/
-.second{
-  .second__advantages{
+.advantages{
+  .advantages__content{
     justify-content: center;
     align-items: center;
   }
-  .second__advantages-item{
+  .advantages__item{
     width: 430px;
   }
 }
-/*************************THREE****************************/
-// .three{
-// .three__content{
-//   .three__content-img{
-//     img{
-//       width: 100%;
-//       // height: 286px;
-//     }
-//   }
-//   .three__content-info{
-//     ul li{
-//       font-style: normal;
-//       font-weight: 500;
-//       font-size: 18px;
-//       line-height: 22px;
-//       padding: 30px 10px;
-//     }}
-// }
-//
-// }
-/*************************SIX****************************/
-.six{
-  .six__content{
-    .six__info{
-      .six__info-item{
-        p{
-          font-style: normal;
-          font-weight: normal;
-          font-size: 14px;
-          line-height: 17px;
-        }
-      }
-    }
-    .six__map{
-      margin-top: 40px;
+
+.contacts{
+  .contacts__map{
+    margin-top: 40px;
+  }
+  .contacts__content-item{
+    p{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
     }
   }
 }
 /*************************FOOTER****************************/
-footer{
+.footer{
   padding: 20px 50px;
-  .footer-logo{
+  .footer__logo{
     margin-right: 70%;
     span{
       font-weight: 800;
@@ -453,13 +418,5 @@ footer{
     }
   }
 }
-
-
-
-
-
-
-
-
 
 }
